@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birds & Bees Cafeto · Nature-themed Pure Veg Cafe in Indore</title>
+<meta name="description" content="An urban oasis in the middle of Indore. Hanging ferns, wicker lights, handmade decor and a 100% pure vegetarian menu of pizzas, club sandwiches, cold coffees and mojitos. Phooti Kothi Circle, Scheme 71.">
+<meta property="og:title" content="Birds & Bees Cafeto · Indore">
+<meta property="og:description" content="A garden you can sit inside. 100% pure vegetarian cafe at Phooti Kothi Circle, Indore.">
+<meta property="og:image" content="https://birds-and-bees-cafeto.vercel.app/img/p02.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1f3a2b">
+<link rel="icon" href="https://birds-and-bees-cafeto.vercel.app/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"CafeOrCoffeeShop",
+  "name":"Birds & Bees Cafeto","servesCuisine":["Vegetarian","Cafe","Pizza","Sandwiches"],
+  "priceRange":"₹200–400","telephone":"+91-98260-33910",
+  "image":"https://birds-and-bees-cafeto.vercel.app/img/p02.jpg",
+  "address":{"@type":"PostalAddress","streetAddress":"Orange Square Building, Sch. No. 71, Phooti Kothi Circle, near Brand Factory, Gumasta Nagar","addressLocality":"Indore","addressRegion":"MP","postalCode":"452009","addressCountry":"IN"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:30","closes":"23:00"}],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"488"},
+  "sameAs":["https://www.instagram.com/birdsnbeescafeto/"]
+}
+</script>
+<style>
+:root{
+  --forest:#1f3a2b; --forest-2:#2c4f3b; --moss:#6b8f5e; --sage:#cfdcc4;
+  --cream:#f6f1e6; --paper:#fbf8f1; --honey:#e8a83a; --honey-2:#f4c76b;
+  --ink:#1b211c; --muted:#5d665f; --line:rgba(31,58,43,.14);
+  --r:22px; --shadow:0 20px 50px -20px rgba(31,58,43,.35);
+  --serif:'Fraunces',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{overflow-x:clip}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1200px,92vw);margin-inline:auto}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--moss);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(2.1rem,4.6vw,3.6rem);margin:.6rem 0 1rem}
+h2 em,h1 em{font-style:italic;color:var(--moss)}
+.lead{color:var(--muted);font-size:1.08rem;max-width:56ch}
+section{padding:clamp(70px,10vw,130px) 0}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .25s,background .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--forest);color:var(--cream);box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--forest-2)}
+.btn-honey{background:var(--honey);color:var(--ink)}
+.btn-honey:hover{background:var(--honey-2)}
+.btn-ghost{border:1.5px solid var(--line);background:rgba(255,255,255,.5)}
+.btn-ghost:hover{border-color:var(--forest)}
+.btn svg{width:18px;height:18px}
+
+/* ticker */
+.ticker{background:var(--forest);color:var(--sage);font-size:.8rem;overflow:hidden;white-space:nowrap;padding:.55rem 0}
+.ticker-track{display:inline-flex;animation:scroll 40s linear infinite}
+.ticker span{padding:0 1.4rem;display:inline-flex;align-items:center;gap:1.4rem}
+.ticker span::after{content:"✿";color:var(--honey)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);font-size:1.25rem}
+.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--sage)}
+.nav-links{display:flex;gap:2rem;font-size:.93rem;font-weight:500}
+.nav-links a{position:relative;padding:.3rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--honey);transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.status{display:flex;align-items:center;gap:.45rem;font-size:.8rem;font-weight:600;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:#bbb}
+.status.open i{background:#3fae5a;box-shadow:0 0 0 0 rgba(63,174,90,.6);animation:pulse 2s infinite}
+.status.closed i{background:#d9534f}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(63,174,90,0)}100%{box-shadow:0 0 0 0 rgba(63,174,90,0)}}
+.nav .btn{padding:.7rem 1.2rem}
+.burger{display:none;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:16px;height:1.5px;background:var(--ink);position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.mobile-menu{display:none}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,80px) 0 40px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,70px);align-items:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);margin:1.1rem 0 1.4rem}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:inline-block;transform:translateY(105%);animation:rise 1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .line:nth-child(2)>span{animation-delay:.12s}
+.hero h1 .line:nth-child(3)>span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin:2rem 0 2.6rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;border-top:1px solid var(--line);padding-top:1.6rem}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--forest)}
+.stat small{color:var(--muted);font-size:.8rem;line-height:1.3;display:block}
+.hero-media{position:relative}
+.reel{border-radius:200px 200px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5.4;box-shadow:var(--shadow);background:var(--sage)}
+.reel video,.reel img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:-28px;bottom:60px;background:var(--cream);border-radius:18px;padding:.6rem;display:flex;align-items:center;gap:.7rem;box-shadow:var(--shadow);animation:float 5s ease-in-out infinite}
+.badge img{width:58px;height:58px;border-radius:12px;object-fit:cover}
+.badge b{font-family:var(--serif);font-style:italic;font-size:1.1rem;display:block}
+.badge small{font-size:.75rem;color:var(--muted)}
+.seal{position:absolute;right:-18px;top:30px;width:110px;height:110px;border-radius:50%;background:var(--honey);display:grid;place-items:center;animation:spin 18s linear infinite}
+.seal svg{width:100%;height:100%}
+.seal::after{content:"🐝";position:absolute;font-size:1.8rem;animation:spin 18s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+.tagline{overflow:hidden;white-space:nowrap;padding:2.2rem 0;border-block:1px solid var(--line);margin-top:3rem}
+.tagline .ticker-track{animation-duration:30s}
+.tagline span{font-family:var(--serif);font-size:clamp(2rem,5vw,4rem);padding:0 2rem;display:inline-flex;align-items:center;gap:2rem}
+.tagline span:nth-child(even){font-style:italic;color:var(--moss)}
+.tagline span::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--honey)}
+.strip{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:1rem;margin-top:3rem}
+.strip figure{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sage)}
+.strip figure:nth-child(2){aspect-ratio:auto}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.strip figure:hover img{transform:scale(1.06)}
+.hindi{text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3.4vw,2.6rem);margin-top:3.5rem;color:var(--forest)}
+.hindi small{display:block;font-family:var(--sans);font-style:normal;font-size:.95rem;color:var(--muted);margin-top:.5rem}
+
+/* story */
+.story{background:var(--forest);color:var(--cream);border-radius:40px;margin:0 clamp(8px,2vw,24px);position:relative;overflow:hidden}
+.story .eyebrow{color:var(--honey-2)}
+.story h2 em{color:var(--honey-2)}
+.story .lead{color:rgba(246,241,230,.75)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.story-img{position:relative}
+.story-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.story-img .small{position:absolute;width:45%;right:-6%;bottom:-8%;border:6px solid var(--forest);aspect-ratio:1}
+.highlights{display:grid;gap:1rem;margin-top:2.2rem}
+.hl{display:flex;gap:1rem;padding:1.2rem 1.3rem;border:1px solid rgba(246,241,230,.14);border-radius:18px;transition:background .3s}
+.hl:hover{background:rgba(246,241,230,.06)}
+.hl .ic{flex:0 0 44px;height:44px;border-radius:12px;background:rgba(232,168,58,.16);display:grid;place-items:center;font-size:1.3rem}
+.hl h3{font-size:1.25rem;margin-bottom:.2rem}
+.hl p{font-size:.92rem;color:rgba(246,241,230,.7)}
+.leaf{position:absolute;opacity:.07;width:420px;right:-120px;top:-80px;pointer-events:none}
+
+/* kitchen */
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.dishes{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.dish{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:transform .4s,box-shadow .4s}
+.dish:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.dish figure{aspect-ratio:1;overflow:hidden;position:relative;background:var(--sage)}
+.dish img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.dish:hover img{transform:scale(1.07)}
+.tag{position:absolute;top:12px;left:12px;background:var(--honey);color:var(--ink);font-size:.72rem;font-weight:700;padding:.3rem .7rem;border-radius:999px}
+.dish .info{padding:1.1rem 1.2rem 1.3rem;display:flex;justify-content:space-between;align-items:center;gap:.6rem}
+.dish h3{font-size:1.15rem;line-height:1.2}
+.price{font-weight:700;color:var(--forest);white-space:nowrap}
+.add{position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 6px 16px -6px rgba(0,0,0,.3);display:grid;place-items:center;font-size:1.2rem;transition:.25s;flex:0 0 auto}
+.add:hover{background:var(--forest);color:var(--cream)}
+.veg{display:inline-block;width:13px;height:13px;border:1.5px solid #2e8b3e;border-radius:2px;position:relative;margin-right:.4rem;vertical-align:-1px}
+.veg::after{content:"";position:absolute;inset:2.5px;border-radius:50%;background:#2e8b3e}
+
+/* order */
+.order{background:var(--cream)}
+.order-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.steps{display:grid;gap:.8rem;margin:2rem 0}
+.step{display:flex;gap:1rem;align-items:center}
+.step b{width:34px;height:34px;border-radius:50%;background:var(--forest);color:var(--cream);display:grid;place-items:center;font-size:.85rem;flex:0 0 auto}
+.tables{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.tables button{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-weight:600;transition:.2s}
+.tables button.on{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.menu-box{background:#fff;border-radius:28px;padding:1.4rem;box-shadow:var(--shadow)}
+.menu-tabs{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.8rem;margin-bottom:.4rem;scrollbar-width:none}
+.menu-tabs button{padding:.5rem 1rem;border-radius:999px;border:1px solid var(--line);font-size:.85rem;font-weight:600;white-space:nowrap}
+.menu-tabs button.on{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.items{display:grid;gap:.2rem;max-height:420px;overflow:auto;padding-right:.3rem}
+.item{display:flex;align-items:center;gap:.9rem;padding:.8rem .6rem;border-radius:14px;cursor:pointer;transition:background .2s;user-select:none}
+.item:hover{background:var(--paper)}
+.item .tick{width:24px;height:24px;border-radius:8px;border:1.8px solid var(--line);display:grid;place-items:center;transition:.2s;flex:0 0 auto}
+.item.on .tick{background:var(--forest);border-color:var(--forest)}
+.item.on .tick::after{content:"";width:6px;height:11px;border:solid var(--cream);border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.item .nm{flex:1;font-weight:500}
+.item .nm small{display:block;color:var(--muted);font-weight:400;font-size:.78rem}
+.qty{display:none;align-items:center;gap:.4rem}
+.item.on .qty{display:flex}
+.qty button{width:26px;height:26px;border-radius:50%;background:var(--cream);font-weight:700}
+.menu-note{font-size:.8rem;color:var(--muted);margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line)}
+
+/* cart bar & drawer */
+.cartbar{position:fixed;left:50%;bottom:18px;transform:translate(-50%,140%);z-index:60;background:var(--ink);color:var(--cream);border-radius:999px;padding:.55rem .55rem .55rem 1.4rem;display:flex;align-items:center;gap:1.2rem;box-shadow:0 20px 50px -10px rgba(0,0,0,.45);transition:transform .45s cubic-bezier(.2,.8,.2,1);width:max-content;max-width:94vw}
+.cartbar.show{transform:translate(-50%,0)}
+.cartbar b{color:var(--honey-2)}
+.drawer-bg{position:fixed;inset:0;background:rgba(15,25,18,.5);backdrop-filter:blur(3px);z-index:80;opacity:0;pointer-events:none;transition:.35s}
+.drawer{position:fixed;right:0;top:0;bottom:0;width:min(440px,100vw);background:var(--paper);z-index:90;transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+.drawer.open{transform:none}.drawer-bg.open{opacity:1;pointer-events:auto}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 1.5rem;border-bottom:1px solid var(--line)}
+.drawer-head h3{font-size:1.6rem}
+.x{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);font-size:1.3rem}
+.drawer-body{flex:1;overflow:auto;padding:1.2rem 1.5rem}
+.drawer-foot{padding:1.2rem 1.5rem;border-top:1px solid var(--line);background:#fff}
+.line-item{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.empty{color:var(--muted);padding:1rem 0}
+.linkbtn{color:var(--moss);font-weight:600;font-size:.9rem;margin:.8rem 0 1.2rem;display:inline-block}
+.field{display:grid;gap:.35rem;margin-bottom:.9rem}
+.field label{font-size:.8rem;font-weight:600;color:var(--muted)}
+.field input,.field select,.field textarea{padding:.85rem 1rem;border-radius:12px;border:1.5px solid var(--line);background:#fff;outline:none;transition:border-color .2s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--moss)}
+.total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:.9rem}
+.fine{font-size:.76rem;color:var(--muted);margin-top:.6rem;text-align:center}
+.wa{background:#25d366;color:#fff;width:100%;justify-content:center}
+.wa:hover{background:#1fbe5a}
+
+/* instagram */
+.ig-grid{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:1.2rem;align-items:stretch}
+.ig-card{border-radius:var(--r);overflow:hidden;aspect-ratio:9/14;position:relative;background:var(--forest)}
+.ig-card video{width:100%;height:100%;object-fit:cover}
+.ig-card .handle{position:absolute;left:14px;bottom:14px;color:#fff;font-size:.82rem;font-weight:600;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:.35rem .8rem;border-radius:999px}
+.ig-cta{background:linear-gradient(150deg,var(--forest),var(--forest-2));color:var(--cream);border-radius:var(--r);padding:2rem;display:flex;flex-direction:column;justify-content:space-between}
+.ig-cta .big{font-family:var(--serif);font-size:clamp(3rem,6vw,4.6rem);line-height:1;color:var(--honey-2)}
+
+/* gallery */
+.gallery{columns:3 280px;column-gap:1rem}
+.gallery button{display:block;width:100%;margin-bottom:1rem;border-radius:var(--r);overflow:hidden;position:relative;break-inside:avoid;background:var(--sage)}
+.gallery img{width:100%;transition:transform .8s}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;inset:auto 0 0 0;padding:2.2rem 1rem .9rem;color:#fff;font-size:.85rem;text-align:left;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transform:translateY(10px);transition:.35s}
+.gallery button:hover figcaption{opacity:1;transform:none}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,15,12,.92);display:none;align-items:center;justify-content:center;padding:4vw;flex-direction:column;gap:1rem}
+.lightbox.open{display:flex}
+.lightbox img{max-height:80vh;border-radius:14px}
+.lightbox p{color:var(--sage);font-size:.9rem;text-align:center;max-width:60ch}
+.lightbox .x{position:absolute;top:20px;right:20px;color:#fff;border-color:rgba(255,255,255,.3)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;font-size:1.4rem}
+.lb-prev{left:16px}.lb-next{right:16px}
+
+/* reviews */
+.reviews{background:var(--cream)}
+.rating-top{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;margin-bottom:3rem}
+.score{font-family:var(--serif);font-size:clamp(5rem,12vw,9rem);line-height:.9;color:var(--forest)}
+.score small{font-size:.3em;color:var(--muted)}
+.stars{color:var(--honey);letter-spacing:.15em;font-size:1.2rem}
+.platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.plat{background:#fff;border-radius:18px;padding:1.2rem 1.3rem;border:1px solid var(--line)}
+.plat b{font-family:var(--serif);font-size:1.8rem;font-weight:600;display:block}
+.plat small{color:var(--muted);font-size:.82rem}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.card{background:#fff;border-radius:var(--r);padding:1.6rem;border:1px solid var(--line);transition:transform .35s}
+.card:hover{transform:translateY(-5px)}
+.card .ic{font-size:1.6rem;margin-bottom:1rem}
+.card h3{font-size:1.3rem;margin-bottom:.4rem}
+.card p{color:var(--muted);font-size:.92rem}
+.write{margin-top:2.4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;background:var(--forest);color:var(--cream);border-radius:var(--r);padding:1.6rem 2rem}
+.write h3{font-size:1.6rem}
+
+/* book */
+.book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px)}
+.perks{display:grid;gap:.7rem;margin:1.8rem 0}
+.perks li{list-style:none;display:flex;gap:.7rem;align-items:center}
+.perks li::before{content:"✓";width:24px;height:24px;border-radius:50%;background:var(--sage);color:var(--forest);display:grid;place-items:center;font-size:.75rem;font-weight:700;flex:0 0 auto}
+.partners{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.partners a{padding:.5rem 1rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;font-weight:600;transition:.2s}
+.partners a:hover{background:var(--forest);color:var(--cream)}
+.form{background:#fff;border-radius:28px;padding:clamp(1.4rem,3vw,2.4rem);box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+.form .err{color:#c0392b;font-size:.85rem;min-height:1.2em;margin-bottom:.4rem}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px)}
+.faq details{border-bottom:1px solid var(--line);padding:1.3rem 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;font-family:var(--serif);font-size:1.3rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-size:1.5rem;line-height:1;transition:transform .3s;color:var(--moss)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);margin-top:.7rem;max-width:60ch}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:1.2rem}
+.vcard{background:var(--forest);color:var(--cream);border-radius:28px;padding:clamp(1.6rem,3vw,2.6rem);display:grid;gap:1.6rem;align-content:start}
+.vcard h4{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--honey-2);margin-bottom:.4rem;font-weight:600}
+.vcard p,.vcard a{color:rgba(246,241,230,.88)}
+.vcard .row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.copy{padding:.3rem .8rem;border-radius:999px;border:1px solid rgba(246,241,230,.3);font-size:.78rem}
+.map{border-radius:28px;overflow:hidden;min-height:440px;background:var(--sage)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;filter:saturate(.8)}
+
+footer{background:var(--ink);color:rgba(246,241,230,.7);padding:3rem 0 6rem;margin-top:clamp(70px,10vw,130px)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.foot .brand{color:var(--cream)}
+.foot nav{display:flex;gap:1.5rem;font-size:.9rem}
+.foot nav a:hover{color:var(--honey-2)}
+.foot small{display:block;margin-top:1.5rem;font-size:.82rem}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:55;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .25s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:28px;height:28px;fill:#fff}
+.toast{position:fixed;left:50%;top:24px;transform:translate(-50%,-150%);background:var(--ink);color:var(--cream);padding:.7rem 1.2rem;border-radius:999px;font-size:.9rem;z-index:120;transition:transform .4s}
+.toast.show{transform:translate(-50%,0)}
+
+.hero-grid>*,.story-grid>*,.order-grid>*,.book-grid>*,.faq-grid>*,.visit-grid>*{min-width:0}
+h2{overflow-wrap:break-word}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .nav-links,.nav-right .status{display:none}
+  .burger{display:flex}
+  .mobile-menu{position:fixed;inset:74px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);padding:1.2rem 4vw 1.6rem;flex-direction:column;gap:.2rem;z-index:49}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{font-family:var(--serif);font-size:1.6rem;padding:.4rem 0}
+  .hero-grid,.story-grid,.order-grid,.book-grid,.faq-grid,.visit-grid{grid-template-columns:1fr}
+  .hero-media{max-width:440px;margin:0 auto;width:100%}
+  .dishes,.cards{grid-template-columns:repeat(2,1fr)}
+  .ig-grid{grid-template-columns:1fr 1fr}
+  .ig-cta{grid-column:1/-1}
+  .rating-top{grid-template-columns:1fr;gap:1.5rem}
+  .story-img .small{right:-2%}
+}
+@media (max-width:600px){
+  .nav .btn{display:none}
+  .stats{grid-template-columns:repeat(2,1fr);gap:1.2rem}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip figure:nth-child(2){grid-column:1/-1;grid-row:1;aspect-ratio:16/10}
+  .dishes{gap:.7rem}
+  .dish .info{flex-direction:column;align-items:flex-start;padding:.9rem}
+  .dish h3{font-size:1rem}
+  .add{position:absolute;right:10px;bottom:10px;background:#fff}
+  .dish figure{position:relative}
+  .cards,.platforms{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .badge{left:-6px}.seal{right:-6px;width:88px;height:88px}
+  .ig-grid{grid-template-columns:1fr 1fr;gap:.7rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hero h1 .line>span{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-label="Cafe information">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Birds & Bees Cafeto home">
+      <img src="https://birds-and-bees-cafeto.vercel.app/img/logo.jpg" alt="Birds & Bees Cafeto logo" width="42" height="42">
+      <span>Birds &amp; Bees</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#story">Our story</a><a href="#order">Order</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-right">
+      <div class="status" id="status"><i></i><span>Checking hours…</span></div>
+      <a href="#book" class="btn btn-primary">Book a table</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story">Our story</a><a href="#order">Order</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a href="#book">Book a table</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Nature-themed cafe · Gumasta Nagar · Indore</span>
+        <h1><span class="line"><span>An urban oasis</span></span><span class="line"><span>in the middle</span></span><span class="line"><span>of <em>Indore</em></span></span></h1>
+        <p class="lead">Hanging ferns, wicker lights and handmade decor around a 100% pure vegetarian menu of pizzas, club sandwiches, cold coffees and mojitos.</p>
+        <div class="hero-ctas">
+          <a href="#book" class="btn btn-primary">Book a table <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#order" class="btn btn-ghost">Order to your table</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>4.6★</b><small>488 Google reviews</small></div>
+          <div class="stat"><b>100%</b><small>Pure vegetarian</small></div>
+          <div class="stat"><b>₹200–400</b><small>Per person</small></div>
+          <div class="stat"><b>12.5 hrs</b><small>Open daily</small></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="reel">
+          <video src="https://birds-and-bees-cafeto.vercel.app/vid/reel1.mp4" poster="https://birds-and-bees-cafeto.vercel.app/img/p02.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Video tour of the cafe"></video>
+        </div>
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><defs><path id="c" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text font-size="9.5" font-family="DM Sans" font-weight="700" letter-spacing="2.4" fill="#1b211c"><textPath href="#c">PURE VEG · HANDMADE · GREEN ·</textPath></text></svg>
+        </div>
+        <div class="badge">
+          <img src="https://birds-and-bees-cafeto.vercel.app/img/p12.jpg" alt="A cold drink being poured" loading="lazy">
+          <div><b>fresh pour</b><small>Cold coffees &amp; mojitos</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tagline" aria-hidden="true"><div class="ticker-track" id="taglineTrack"></div></div>
+
+  <div class="wrap">
+    <div class="strip reveal">
+      <figure><img src="https://birds-and-bees-cafeto.vercel.app/img/p01.jpg" alt="The counter with its round glowing logo, brick base and hanging plants" loading="lazy"></figure>
+      <figure><img src="https://birds-and-bees-cafeto.vercel.app/img/p02.jpg" alt="Inside the cafe: a large fern hangs over terrazzo floors, white garden chairs and a wicker-lamp ceiling" loading="lazy"></figure>
+      <figure><img src="https://birds-and-bees-cafeto.vercel.app/img/p03.jpg" alt="Evening corner lined with wooden shelves of potted plants and warm lights" loading="lazy"></figure>
+    </div>
+    <p class="hindi reveal">“City ke beech bhi sukoon chahiye?”<small>Even in the middle of the city, you deserve a little calm.</small></p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <svg class="leaf" viewBox="0 0 200 200" aria-hidden="true"><path fill="#f6f1e6" d="M100 5C40 40 20 110 60 190c10-60 30-100 70-140-30 50-45 90-50 140C170 150 180 70 100 5z"/></svg>
+  <div class="wrap story-grid">
+    <div class="story-img reveal">
+      <img src="https://birds-and-bees-cafeto.vercel.app/img/p02.jpg" alt="Hanging fern over terrazzo floors and white garden chairs" loading="lazy">
+      <img class="small" src="https://birds-and-bees-cafeto.vercel.app/img/g07.jpg" alt="The cafe entrance, framed by creepers and large potted plants" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Our story</span>
+      <h2>A garden you can sit inside, <em>built by hand</em></h2>
+      <p class="lead">Tucked inside the Orange Square Building at Phooti Kothi Circle, Birds &amp; Bees is a green pocket of calm. The space is built mostly from upcycled materials and handmade decor, and the kitchen keeps things fresh, simple and fully vegetarian.</p>
+      <div class="highlights">
+        <div class="hl"><div class="ic">🌿</div><div><h3>Green everywhere</h3><p>Ferns, creepers and potted plants on every wall and ceiling.</p></div></div>
+        <div class="hl"><div class="ic">🪴</div><div><h3>Upcycled &amp; handmade</h3><p>Most of what you sit on and look at has been reused or made by hand.</p></div></div>
+        <div class="hl"><div class="ic">🥗</div><div><h3>Pure veg kitchen</h3><p>Every single item on the menu is vegetarian.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KITCHEN -->
+<section id="kitchen">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">From the kitchen</span><h2>What regulars <em>keep ordering</em></h2></div>
+      <a href="#order" class="btn btn-ghost">Order to your table</a>
+    </div>
+    <div class="dishes" id="dishes"></div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order" id="order">
+  <div class="wrap order-grid">
+    <div class="reveal">
+      <span class="eyebrow">Order from your table</span>
+      <h2>Tick it, and <em>we'll bring it over</em></h2>
+      <p class="lead">Already sitting in the garden? Skip the wait. Pick your table, tick what you'd like, and your order goes straight to the kitchen on WhatsApp.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><span>Choose your table number</span></div>
+        <div class="step"><b>2</b><span>Tick the dishes and drinks you want</span></div>
+        <div class="step"><b>3</b><span>Place the order on WhatsApp, pay at the counter</span></div>
+      </div>
+      <strong style="font-size:.9rem">Your table</strong>
+      <div class="tables" id="tables" role="group" aria-label="Table number"></div>
+    </div>
+    <div class="menu-box reveal">
+      <div class="menu-tabs" id="tabs" role="tablist"></div>
+      <div class="items" id="items"></div>
+      <p class="menu-note"><span class="veg"></span>All items pure veg · prices as on the in-cafe menu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">On Instagram</span><h2>Drink, vibe, food. <em>In that order.</em></h2></div>
+    </div>
+    <div class="ig-grid reveal">
+      <div class="ig-card"><video src="https://birds-and-bees-cafeto.vercel.app/vid/reel1.mp4" muted loop playsinline preload="none" data-autoplay aria-label="Instagram reel"></video><span class="handle">@birdsnbeescafeto</span></div>
+      <div class="ig-card"><video src="https://birds-and-bees-cafeto.vercel.app/vid/reel2.mp4" muted loop playsinline preload="none" data-autoplay aria-label="Instagram reel"></video><span class="handle">@birdsnbeescafeto</span></div>
+      <div class="ig-cta">
+        <div><div class="big">4,100+</div><p style="margin-top:.6rem;opacity:.8">people follow along for new drinks, corners and cafe moments.</p></div>
+        <a class="btn btn-honey" href="https://www.instagram.com/birdsnbeescafeto/" target="_blank" rel="noopener">Follow @birdsnbeescafeto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Gallery</span><h2>Corners <em>worth a photo</em></h2></div>
+      <p class="lead" style="max-width:30ch">Tap any image to open it full size.</p>
+    </div>
+    <div class="gallery reveal" id="gallery-grid"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow reveal">Reviews</span>
+    <h2 class="reveal">What guests <em>say</em></h2>
+    <div class="rating-top reveal">
+      <div><div class="score">4.6<small>/5</small></div><div class="stars" aria-label="4.6 out of 5 stars">★★★★★</div><small style="color:var(--muted)">Average of 488 Google reviews</small></div>
+      <div class="platforms">
+        <div class="plat"><b>4.6</b><small>Google · 488 reviews</small></div>
+        <div class="plat"><b>4.5</b><small>Justdial · 685 ratings</small></div>
+        <div class="plat"><b>4.2K+</b><small>Instagram followers</small></div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="ic">🍕</div><h3>Fresh, tasty food</h3><p>Coffee, pizza and pasta come up again and again in reviews.</p></div>
+      <div class="card reveal"><div class="ic">🌱</div><h3>A calm, green space</h3><p>Guests describe it as cozy and aesthetic, full of greenery, and a peaceful place to relax.</p></div>
+      <div class="card reveal"><div class="ic">🤝</div><h3>Friendly staff</h3><p>Reviewers call the team welcoming and attentive.</p></div>
+      <div class="card reveal"><div class="ic">💛</div><h3>Fair prices</h3><p>Around ₹200–400 per person, as reported by 114 people on Google.</p></div>
+    </div>
+    <div class="write reveal">
+      <div><h3>Enjoyed your visit?</h3><p style="opacity:.75">A quick Google review helps more people find the garden.</p></div>
+      <a class="btn btn-honey" href="https://www.google.com/maps/search/?api=1&query=Birds+%26+Bees+Cafeto+Indore" target="_blank" rel="noopener">Write a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <span class="eyebrow">Reservations</span>
+      <h2>Save a table <em>in the garden</em></h2>
+      <p class="lead">Fill this in and we'll prepare a WhatsApp message with all the details. Send it, and the team confirms your table.</p>
+      <ul class="perks">
+        <li>Tables for two, groups or families</li>
+        <li>Celebrating? Add a birthday note</li>
+        <li>Walk-ins welcome; booking recommended for evenings and weekends</li>
+      </ul>
+      <strong style="font-size:.9rem">Or book through</strong>
+      <div class="partners">
+        <a href="https://www.zomato.com/indore" target="_blank" rel="noopener">Zomato</a>
+        <a href="https://www.swiggy.com/dineout" target="_blank" rel="noopener">Swiggy Dineout</a>
+        <a href="https://www.eazydiner.com/indore" target="_blank" rel="noopener">EazyDiner</a>
+        <a href="https://www.district.in/" target="_blank" rel="noopener">District</a>
+      </div>
+      <p style="margin-top:1.4rem;color:var(--muted)">Prefer to call? <a href="tel:+919826347009" style="color:var(--forest);font-weight:600">098263 47009</a></p>
+    </div>
+    <form class="form reveal" id="bookForm" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="bName">Name</label><input id="bName" required autocomplete="name" placeholder="Your name"></div>
+        <div class="field"><label for="bPhone">Phone</label><input id="bPhone" type="tel" required autocomplete="tel" placeholder="10-digit mobile" inputmode="numeric"></div>
+        <div class="field"><label for="bDate">Date</label><input id="bDate" type="date" required></div>
+        <div class="field"><label for="bTime">Time</label><select id="bTime" required></select></div>
+      </div>
+      <div class="field"><label for="bGuests">Guests</label>
+        <select id="bGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10+</option></select></div>
+      <div class="field"><label for="bNote">Note (optional)</label><textarea id="bNote" rows="3" placeholder="Birthday, window seat, high chair…"></textarea></div>
+      <p class="err" id="bErr" role="alert"></p>
+      <button class="btn wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.2 1.4z"/></svg>Prepare WhatsApp request</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap faq-grid">
+    <div class="reveal"><span class="eyebrow">Good to know</span><h2>Questions, <em>answered</em></h2></div>
+    <div class="faq reveal">
+      <details open><summary>Is everything vegetarian?</summary><p>Yes. Every item on the menu is 100% pure vegetarian.</p></details>
+      <details><summary>What are your hours?</summary><p>We're open every day, 10:30 AM to 11:00 PM.</p></details>
+      <details><summary>Where exactly are you?</summary><p>Phooti Kothi Circle, Scheme No. 71, Gumasta Nagar, Indore 452009, near Brand Factory. Look for the wall of green.</p></details>
+      <details><summary>How much does a meal cost?</summary><p>About ₹200–400 per person. Pizzas start at ₹150, sandwiches at ₹100 and mojitos at ₹130.</p></details>
+      <details><summary>Do I need to book?</summary><p>Walk-ins are welcome. We recommend booking for evenings, weekends and groups.</p></details>
+      <details><summary>How do I order at my table?</summary><p>Tick your items, choose your table (1 to 10) and place the order. It comes to us on WhatsApp, and you pay at the counter.</p></details>
+      <details><summary>Can I order food home?</summary><p>Yes, through Zomato delivery.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit" style="padding-top:0;padding-bottom:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Find us</span><h2>Look for the <em>wall of green</em></h2></div>
+      <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Birds+%26+Bees+Cafeto+Phooti+Kothi+Indore" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="visit-grid reveal">
+      <div class="vcard">
+        <div><h4>Address</h4><p>Orange Square Building, Sch. No. 71, Phooti Kothi Circle, near Brand Factory, Gumasta Nagar, Indore, MP 452009</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Birds+%26+Bees+Cafeto+Phooti+Kothi+Indore" target="_blank" rel="noopener" style="color:var(--honey-2);font-weight:600;display:inline-block;margin-top:.4rem">Open in Google Maps →</a></div>
+        <div><h4>WhatsApp &amp; orders</h4><div class="row"><a href="tel:+919826033910" style="font-size:1.4rem;font-family:var(--serif)">98260 33910</a><button class="copy" id="copyBtn">Copy</button></div>
+          <p style="margin-top:.4rem;font-size:.9rem">Also: <a href="tel:+919826347009">098263 47009</a> · <a href="tel:+917314099999">0731-4099999</a></p></div>
+        <div><h4>Hours</h4><p>Monday to Sunday · 10:30 AM – 11:00 PM</p></div>
+        <a class="btn wa" href="https://wa.me/919826033910?text=Hi%20Birds%20%26%20Bees!" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="map"><iframe title="Map to Birds & Bees Cafeto" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Birds+%26+Bees+Cafeto,+Phooti+Kothi+Circle,+Indore&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top" class="brand"><img src="https://birds-and-bees-cafeto.vercel.app/img/logo.jpg" alt="" width="42" height="42"><span>Birds &amp; Bees Cafeto</span></a>
+      <nav aria-label="Footer"><a href="#order">Order</a><a href="#book">Book</a><a href="#visit">Visit</a><a href="https://www.instagram.com/birdsnbeescafeto/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <small>© <span id="yr"></span> Birds &amp; Bees Cafeto, Indore · Pure vegetarian</small>
+  </div>
+</footer>
+
+<!-- Cart bar -->
+<div class="cartbar" id="cartbar"><span><b id="cbCount">0 items</b> · <span id="cbTotal">₹0</span></span><button class="btn btn-honey" id="reviewBtn" style="padding:.65rem 1.2rem">Review order</button></div>
+
+<!-- Order drawer -->
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-label="Your order" aria-hidden="true">
+  <div class="drawer-head"><h3>Your order</h3><button class="x" id="closeDrawer" aria-label="Close">×</button></div>
+  <div class="drawer-body">
+    <div id="lines"></div>
+    <a href="#order" class="linkbtn" id="addMore">+ Add more from the menu</a>
+    <div class="field"><label for="oTable">Table number</label><select id="oTable"></select></div>
+    <div class="field"><label for="oName">Name</label><input id="oName" autocomplete="name" placeholder="Your name"></div>
+    <div class="field"><label for="oPhone">Phone</label><input id="oPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile"></div>
+    <div class="field"><label for="oNote">Kitchen note (optional)</label><textarea id="oNote" rows="2" placeholder="Less spicy, no onion…"></textarea></div>
+  </div>
+  <div class="drawer-foot">
+    <div class="total"><span id="dCount">0 items</span><span id="dTotal">₹0</span></div>
+    <p class="err" id="oErr" role="alert" style="color:#c0392b;font-size:.85rem;min-height:1.1em"></p>
+    <button class="btn wa" id="placeOrder">Place order on WhatsApp</button>
+    <p class="fine">Your order goes to the cafe on WhatsApp. Pay at the counter.</p>
+  </div>
+</aside>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<a class="fab" href="https://wa.me/919826033910" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.2 1.4z"/></svg></a>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============ CONFIG — edit here ============ */
+const ASSET = 'https://birds-and-bees-cafeto.vercel.app'; // change to '' once /img and /vid are deployed alongside this file
+const WA_NUMBER = '919826033910';
+const TABLES = 10;
+const OPEN = {h:10,m:30}, CLOSE = {h:23,m:0}; // IST
+
+/* Menu: bestsellers confirmed from the current site.
+   Add the rest of the 120-item in-cafe menu here as {id, name, price, cat, img?, tag?}. */
+const MENU = [
+  {id:'wsp', name:'White Sauce Pasta', price:230, cat:'Pasta', img:'/img/g03.jpg', tag:'Most reviewed', featured:true},
+  {id:'ccs', name:'Cheese Chutney Sandwich', price:130, cat:'Sandwiches', img:'/img/g02.jpg', featured:true},
+  {id:'bcm', name:'Blue Curacao Mojito', price:140, cat:'Mojitos', img:'/img/g08.jpg', featured:true},
+  {id:'psp', name:'Pink Sauce Pasta', price:270, cat:'Pasta', img:'/img/g11.jpg', featured:true},
+];
+const GALLERY = [
+  ['/img/p02.jpg','Inside the cafe: a large fern hangs over terrazzo floors, white garden chairs and a wicker-lamp ceiling'],
+  ['/img/p01.jpg','The counter with its round glowing logo, brick base and hanging plants'],
+  ['/img/g07.jpg','The cafe entrance, framed by creepers and large potted plants'],
+  ['/img/p03.jpg','Evening corner lined with wooden shelves of potted plants and warm lights'],
+  ['/img/g03.jpg','White sauce pasta'],
+  ['/img/p12.jpg','A fresh pour'],
+  ['/img/g08.jpg','Blue curacao mojito'],
+  ['/img/g11.jpg','Pink sauce penne pasta'],
+  ['/img/g02.jpg','Cheese chutney sandwich'],
+];
+/* =========================================== */
+
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const rupee = n => '₹' + n.toLocaleString('en-IN');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('#yr').textContent = new Date().getFullYear();
+
+// Ticker + tagline
+const tick = ['Open 10:30 AM – 11 PM daily','100% pure vegetarian','Phooti Kothi Circle, Scheme 71, Indore','@birdsnbeescafeto','WhatsApp orders: 98260 33910'];
+$('#tickerTrack').innerHTML = [...tick,...tick,...tick,...tick].map(t=>`<span>${t}</span>`).join('');
+const tag = ['Come for the food','Stay for the vibes'];
+$('#taglineTrack').innerHTML = Array(8).fill(tag).flat().map(t=>`<span>${t}</span>`).join('');
+
+// Open status (IST)
+function istNow(){const d=new Date();return new Date(d.getTime()+d.getTimezoneOffset()*60000+330*60000)}
+function updateStatus(){
+  const n=istNow(), mins=n.getHours()*60+n.getMinutes(), o=OPEN.h*60+OPEN.m, c=CLOSE.h*60+CLOSE.m;
+  const el=$('#status'), open=mins>=o&&mins<c;
+  el.className='status '+(open?'open':'closed');
+  el.querySelector('span').textContent = open ? (c-mins<=45?'Closing soon · till 11 PM':'Open now · till 11 PM') : 'Closed · opens 10:30 AM';
+}
+updateStatus(); setInterval(updateStatus,60000);
+
+// Header + mobile menu
+addEventListener('scroll',()=>$('header').classList.toggle('scrolled',scrollY>10),{passive:true});
+$('#burger').onclick=()=>{const o=$('#mobileMenu').classList.toggle('open');$('#burger').setAttribute('aria-expanded',o)};
+$$('#mobileMenu a').forEach(a=>a.onclick=()=>$('#mobileMenu').classList.remove('open'));
+
+// Cart state
+const cart = new Map(); let table = null;
+
+// Featured dishes
+$('#dishes').innerHTML = MENU.filter(m=>m.featured).map(m=>`
+  <article class="dish reveal">
+    <figure><img src="${ASSET+m.img}" alt="${esc(m.name)}" loading="lazy">${m.tag?`<span class="tag">${m.tag}</span>`:''}
+      <button class="add" data-add="${m.id}" aria-label="Add ${esc(m.name)} to order">+</button></figure>
+    <div class="info"><h3><span class="veg" aria-label="Vegetarian"></span>${esc(m.name)}</h3><span class="price">${rupee(m.price)}</span></div>
+  </article>`).join('');
+$$('[data-add]').forEach(b=>b.onclick=()=>{const id=b.dataset.add;cart.set(id,(cart.get(id)||0)+1);render();toast('Added to your order')});
+
+// Tables
+const tBtns = Array.from({length:TABLES},(_,i)=>`<button data-t="${i+1}" aria-pressed="false">${i+1}</button>`).join('');
+$('#tables').innerHTML = tBtns;
+$('#oTable').innerHTML = '<option value="">Select table</option>'+Array.from({length:TABLES},(_,i)=>`<option>${i+1}</option>`).join('');
+$$('#tables button').forEach(b=>b.onclick=()=>setTable(b.dataset.t));
+$('#oTable').onchange=e=>setTable(e.target.value);
+function setTable(t){table=t||null;$$('#tables button').forEach(b=>{const on=b.dataset.t===t;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});$('#oTable').value=t||''}
+const qp = new URLSearchParams(location.search).get('table'); if(qp && +qp>=1 && +qp<=TABLES) setTable(qp); // QR codes: ?table=4
+
+// Menu tabs + items
+const cats = ['Bestsellers',...new Set(MENU.map(m=>m.cat))];
+let curCat = 'Bestsellers';
+$('#tabs').innerHTML = cats.map(c=>`<button role="tab" data-c="${c}">${c}</button>`).join('');
+$$('#tabs button').forEach(b=>b.onclick=()=>{curCat=b.dataset.c;renderItems()});
+function renderItems(){
+  $$('#tabs button').forEach(b=>{b.classList.toggle('on',b.dataset.c===curCat);b.setAttribute('aria-selected',b.dataset.c===curCat)});
+  const list = curCat==='Bestsellers'?MENU.filter(m=>m.featured):MENU.filter(m=>m.cat===curCat);
+  $('#items').innerHTML = list.map(m=>{const q=cart.get(m.id)||0;return `
+    <div class="item ${q?'on':''}" data-id="${m.id}" role="checkbox" aria-checked="${!!q}" tabindex="0">
+      <span class="tick"></span>
+      <span class="nm">${esc(m.name)}<small>${m.cat}${m.tag?' · '+m.tag:''}</small></span>
+      <span class="qty"><button data-d="-1" aria-label="Less">−</button><span>${q}</span><button data-d="1" aria-label="More">+</button></span>
+      <span class="price">${rupee(m.price)}</span>
+    </div>`}).join('');
+  $$('#items .item').forEach(el=>{
+    const id=el.dataset.id;
+    const toggle=()=>{cart.has(id)?cart.delete(id):cart.set(id,1);render()};
+    el.onclick=e=>{const d=e.target.closest('[data-d]');if(d){e.stopPropagation();const q=(cart.get(id)||0)+ +d.dataset.d;q>0?cart.set(id,q):cart.delete(id);render();return}toggle()};
+    el.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();toggle()}};
+  });
+}
+function totals(){let n=0,t=0;cart.forEach((q,id)=>{const m=MENU.find(x=>x.id===id);n+=q;t+=q*m.price});return {n,t}}
+function render(){
+  renderItems();
+  const {n,t}=totals(), lbl=`${n} item${n===1?'':'s'}`;
+  $('#cbCount').textContent=$('#dCount').textContent=lbl;
+  $('#cbTotal').textContent=$('#dTotal').textContent=rupee(t);
+  $('#cartbar').classList.toggle('show',n>0 && !$('#drawer').classList.contains('open'));
+  $('#lines').innerHTML = n ? [...cart].map(([id,q])=>{const m=MENU.find(x=>x.id===id);return `<div class="line-item"><span>${q} × ${esc(m.name)}</span><span>${rupee(q*m.price)}</span></div>`}).join('') : '<p class="empty">Nothing selected yet.</p>';
+}
+render();
+
+// Drawer
+function openDrawer(o){$('#drawer').classList.toggle('open',o);$('#drawerBg').classList.toggle('open',o);$('#drawer').setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':'';render()}
+$('#reviewBtn').onclick=()=>openDrawer(true);
+$('#closeDrawer').onclick=$('#drawerBg').onclick=$('#addMore').onclick=()=>openDrawer(false);
+const okPhone = p => /^(\+?91)?[6-9]\d{9}$/.test(p.replace(/[\s-]/g,''));
+$('#placeOrder').onclick=()=>{
+  const {n,t}=totals(), name=$('#oName').value.trim(), phone=$('#oPhone').value.trim(), note=$('#oNote').value.trim();
+  const err = !n?'Tick at least one item first.':!table?'Choose your table number.':!name?'Add your name.':!okPhone(phone)?'Enter a valid 10-digit mobile number.':'';
+  $('#oErr').textContent=err; if(err) return;
+  const lines=[...cart].map(([id,q])=>{const m=MENU.find(x=>x.id===id);return `• ${q} × ${m.name} — ${rupee(q*m.price)}`});
+  const msg=`*New table order* 🌿\nTable: ${table}\nName: ${name}\nPhone: ${phone}\n\n${lines.join('\n')}\n\n*Total: ${rupee(t)}* (${n} items)${note?`\nKitchen note: ${note}`:''}\n\nI'll pay at the counter.`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+};
+
+// Booking
+const bDate=$('#bDate'); const today=istNow(); const iso=d=>d.toISOString().slice(0,10);
+const localISO=new Date(Date.UTC(today.getFullYear(),today.getMonth(),today.getDate()));
+bDate.min=iso(localISO); bDate.value=iso(localISO);
+const slots=[];for(let m=OPEN.h*60+OPEN.m;m<=CLOSE.h*60-60;m+=30){const h=Math.floor(m/60),mm=m%60;slots.push(`${((h+11)%12)+1}:${String(mm).padStart(2,'0')} ${h<12?'AM':'PM'}`)}
+$('#bTime').innerHTML='<option value="">Pick a time</option>'+slots.map(s=>`<option>${s}</option>`).join('');
+$('#bookForm').onsubmit=e=>{
+  e.preventDefault();
+  const name=$('#bName').value.trim(), phone=$('#bPhone').value.trim(), date=bDate.value, time=$('#bTime').value, guests=$('#bGuests').value, note=$('#bNote').value.trim();
+  const err=!name?'Please add your name.':!okPhone(phone)?'Enter a valid 10-digit mobile number.':!date?'Pick a date.':date<bDate.min?'That date has passed.':!time?'Pick a time.':'';
+  $('#bErr').textContent=err; if(err) return;
+  const nice=new Date(date+'T00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'});
+  const msg=`*Table request* 🌿\nName: ${name}\nPhone: ${phone}\nDate: ${nice}\nTime: ${time}\nGuests: ${guests}${note?`\nNote: ${note}`:''}\n\nPlease confirm my table. Thank you!`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+};
+
+// Gallery + lightbox
+$('#gallery-grid').innerHTML=GALLERY.map(([src,cap],i)=>`<button data-i="${i}" aria-label="Open image: ${esc(cap)}"><img src="${ASSET+src}" alt="${esc(cap)}" loading="lazy"><figcaption>${esc(cap)}</figcaption></button>`).join('');
+let lbi=0;
+function showLb(i){lbi=(i+GALLERY.length)%GALLERY.length;$('#lbImg').src=ASSET+GALLERY[lbi][0];$('#lbImg').alt=GALLERY[lbi][1];$('#lbCap').textContent=GALLERY[lbi][1];$('#lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLb(){$('#lightbox').classList.remove('open');document.body.style.overflow=''}
+$$('#gallery-grid button').forEach(b=>b.onclick=()=>showLb(+b.dataset.i));
+$('#lbClose').onclick=closeLb;$('#lbPrev').onclick=()=>showLb(lbi-1);$('#lbNext').onclick=()=>showLb(lbi+1);
+$('#lightbox').onclick=e=>{if(e.target.id==='lightbox')closeLb()};
+addEventListener('keydown',e=>{
+  if($('#lightbox').classList.contains('open')){if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')showLb(lbi-1);if(e.key==='ArrowRight')showLb(lbi+1)}
+  else if(e.key==='Escape'&&$('#drawer').classList.contains('open'))openDrawer(false);
+});
+
+// Copy number
+$('#copyBtn').onclick=async()=>{try{await navigator.clipboard.writeText('9826033910');toast('Number copied')}catch{toast('98260 33910')}};
+
+// Toast
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),1800)}
+
+// Reveal + lazy autoplay reels
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach(el=>io.observe(el));
+const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.play().catch(()=>{})}else v.pause()}),{threshold:.3});
+$$('video[data-autoplay]').forEach(v=>vo.observe(v));
+</script>
+</body>
+</html>
